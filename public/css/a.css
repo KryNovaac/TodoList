@@ -1,0 +1,52 @@
+
+        /* Custom styles for smooth sliding drawer */
+        .drawer-menu {
+            transition: transform 0.3s ease-in-out;
+        }
+        .drawer-open {
+            transform: translateX(0);
+        }
+        .drawer-closed {
+            transform: translateX(-100%);
+        }
+        /* Overlay style when drawer is open */
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .hu:hover {
+    transition: 2s;
+    /* background: linear-gradient(90deg,rgb(11, 20, 88), rgb(223, 82, 82) 100%); */
+    background: linear-gradient(930deg, rgb(255, 224, 240), rgb(187, 196, 255), rgb(208, 154, 255),rgb(152, 164, 255) 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    animation: gradient 2s ease infinite;
+  }
+  
+  .active {
+    /* background: linear-gradient(90deg,rgb(11, 20, 88), rgb(223, 82, 82) 100%); */
+    background: linear-gradient(90deg, rgb(255, 135, 219), rgb(255, 150, 150),rgb(88, 114, 255) 100%);
+    background-size: 200% auto;
+    color: #fff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    animation: gradient 2s ease infinite;
+    transition: 2s;
+  }
+  
+    @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  a {
+    transition: 2s;
+  }
